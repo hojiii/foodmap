@@ -8,7 +8,9 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar__logo">nextmap</div>
+        <Link href = "/" className="navbar__logo">
+          nextmap
+        </Link>
         <div className="navbar__list">
           <Link href="/store" className="navbar__list__item">
             맛집 목록
