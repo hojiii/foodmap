@@ -9,6 +9,7 @@
 .navbar__logo {
   @apply text-blue-800 text-lg font-semibold cursor-pointer px-[18px] py-0;
 }
+
 .navbar__list {
   @apply flex gap-3 items-center px-[18px] py-0;
 }
@@ -17,10 +18,11 @@
   @apply hidden cursor-pointer;
 }
 
-.navbar__list__item {
+.navbar__list--item {
   @apply cursor-pointer;
 }
-.navbar__list__item:hover {
+
+.navbar__list--item:hover {
   @apply text-gray-600;
 }
 
@@ -41,16 +43,19 @@
     @apply block px-[18px] py-0;
   }
 
-  .navbar__list__item--mobile {
+  .navbar__list--item--mobile {
     @apply cursor-pointer;
   }
-  .navbar__list__item--mobile:hover {
+
+  .navbar__list--item--mobile:hover {
     @apply text-gray-600;
   }
+
   .navbar__list--mobile {
     @apply flex flex-col gap-4 px-[18px] py-6;
   }
 }
+
 .infowindow {
-  @apply bg-blue-900 text-white block text-sm text-center h-6 rounded-md px-2 leading-6;
+  @apply bg-blue-900 text-white block text-sm text-center h-6 rounded-sm px-2 leading-6;
 }
